@@ -6,10 +6,11 @@ require("dotenv").config();
 const app = express();
 
 app.use(cors({
-  origin: "https://event-regwebsite.netlify.app",
+  origin: "https://eventform123.netlify.app",
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
 }));
+
 app.use(express.json());
 
 // MongoDB Connection
