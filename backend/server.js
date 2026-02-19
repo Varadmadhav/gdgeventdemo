@@ -6,7 +6,9 @@ require("dotenv").config();
 const app = express();
 
 app.use(cors({
-  origin: "https://eventform123.netlify.app/"
+  origin: "https://event-regwebsite.netlify.app",
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"],
 }));
 app.use(express.json());
 
